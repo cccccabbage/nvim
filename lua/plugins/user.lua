@@ -17,28 +17,6 @@ return {
 
   -- == Examples of Overriding Plugins ==
 
-  -- customize alpha options
-  {
-    "goolord/alpha-nvim",
-    opts = function(_, opts)
-      -- customize the dashboard header
-      opts.section.header.val = {
-        " █████  ███████ ████████ ██████   ██████",
-        "██   ██ ██         ██    ██   ██ ██    ██",
-        "███████ ███████    ██    ██████  ██    ██",
-        "██   ██      ██    ██    ██   ██ ██    ██",
-        "██   ██ ███████    ██    ██   ██  ██████",
-        " ",
-        "    ███    ██ ██    ██ ██ ███    ███",
-        "    ████   ██ ██    ██ ██ ████  ████",
-        "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-        "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-        "    ██   ████   ████   ██ ██      ██",
-      }
-      return opts
-    end,
-  },
-
   -- You can disable default plugins as follows:
   { "max397574/better-escape.nvim", enabled = false },
 
@@ -80,6 +58,37 @@ return {
         -- disable for .vim files, but it work for another filetypes
         Rule("a", "a", "-vim")
       )
+    end,
+  },
+
+  -- customize alpha options
+  {
+    "goolord/alpha-nvim",
+    opts = function(_, opts)
+      -- customize the dashboard header
+      opts.section.header.val = {
+        " █████  ███████ ████████ ██████   ██████",
+        "██   ██ ██         ██    ██   ██ ██    ██",
+        "███████ ███████    ██    ██████  ██    ██",
+        "██   ██      ██    ██    ██   ██ ██    ██",
+        "██   ██ ███████    ██    ██   ██  ██████",
+        " ",
+        "    ███    ██ ██    ██ ██ ███    ███",
+        "    ████   ██ ██    ██ ██ ████  ████",
+        "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
+        "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
+        "    ██   ████   ████   ██ ██      ██",
+      }
+      local get_icon = require("astroui").get_icon
+      opts.section.buttons.val = {
+        opts.button("Ctrl + p", get_icon("Search", 2, true) .. "Find File  "),
+        opts.button("LDR n  ", get_icon("FileNew", 2, true) .. "New File  "),
+        opts.button("LDR f o", get_icon("DefaultFile", 2, true) .. "Recents  "),
+        opts.button("LDR f w", get_icon("WordFile", 2, true) .. "Find Word  "),
+        opts.button("LDR f '", get_icon("Bookmarks", 2, true) .. "Bookmarks  "),
+        opts.button("LDR S l", get_icon("Refresh", 2, true) .. "Last Session  "),
+      }
+      return opts
     end,
   },
 }
