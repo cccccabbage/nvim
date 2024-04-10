@@ -3,7 +3,7 @@
 My personal nvim config based on AstroNvim.
 There are only some key mapping changes and little plugin adjust compared to the AstroNvim.
 
-1. It can correctly toogle pwsh/powershell terminal on windows now.
+1. It can correctly toggle pwsh/powershell terminal on windows now.
 2. Added a plugin, [aerial.nvim](https://github.com/stevearc/aerial.nvim).
 3. Some key mapping change, see the table below for details.
 
