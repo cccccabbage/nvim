@@ -6,6 +6,8 @@ There are only some key mapping changes and little plugin adjust compared to the
 1. It can correctly toggle pwsh/powershell terminal on windows now.
 2. Added a plugin, [aerial.nvim](https://github.com/stevearc/aerial.nvim).
 3. Some key mapping change, see the table below for details.
+4. Completely disabled mouse
+5. Disabled format on start and save
 
 ## Key Mapping Changes
 | mode| Key Map| Former Function| New Function|
