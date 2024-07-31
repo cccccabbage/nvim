@@ -25,3 +25,13 @@ There are only some key mapping changes and little plugin adjust compared to the
 | t| Alt + k| None| Terimal up window navigation|
 | t| Alt + l| None| Terimal right window navigation|
 
+
+## Change Terminal
+Edit the local value in the ```pairs``` function, [terminal.lua](./lua/plugins/terminal.lua).
+
+For example, if powershell is needed, the codes below would be fine.
+```lua
+for option, value in pairs(powershell_options) do
+  vim.opt[option] = value
+end
+```
