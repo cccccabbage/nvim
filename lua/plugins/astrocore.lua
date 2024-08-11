@@ -78,6 +78,7 @@ return {
         ["<A-j>"] = { "<Cmd>wincmd j<CR>", desc = "Terminal down window navigation" },
         ["<A-k>"] = { "<Cmd>wincmd k<CR>", desc = "Terminal up window navigation" },
         ["<A-l>"] = { "<Cmd>wincmd l<CR>", desc = "Terminal right window navigation" },
+        ["<ESC>"] = { "<C-\\><C-n>", desc = "Terminal enter normal mode" },
       },
     },
   },
