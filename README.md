@@ -4,10 +4,9 @@ My personal nvim config based on AstroNvim.
 There are only some key mapping changes and little plugin adjust compared to the AstroNvim.
 
 1. It can correctly toggle pwsh/powershell terminal on windows now.
-2. Added a plugin, [aerial.nvim](https://github.com/stevearc/aerial.nvim).
-3. Some key mapping change, see the table below for details.
-4. Completely disabled mouse
-5. Disabled format on start and save
+2. Some key mapping change, see the table below for details.
+3. Completely disabled mouse
+4. Disabled format on start and save
 
 ## Key Mapping Changes
 | mode| Key Map| Former Function| New Function|
@@ -35,3 +34,12 @@ for option, value in pairs(powershell_options) do
   vim.opt[option] = value
 end
 ```
+
+## im-select
+Please make sure to edit `plua/plugins/im-select.lua`.
+
+```
+default_command = "/path/to/your/im-select",
+```
+
+See [im-select.nvim](https://github.com/keaising/im-select.nvim) for more information.

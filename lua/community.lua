@@ -9,7 +9,7 @@ return {
   -- import/override with your plugins folder
 
   { import = "astrocommunity.pack.cpp" },
-  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.rust" },
 
   -- { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.completion.cmp-cmdline" },

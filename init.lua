@@ -24,3 +24,5 @@ if vim.g.neovide then
 end
 
 vim.opt.mouse = ""
+
+vim.o.scrolloff = 5
