@@ -1,6 +1,9 @@
 local cmp = require("cmp")
 local luasnip = require("luasnip")
 
+require("nvim-autopairs").setup()
+cmp.event:on("confirm_done", require("nvim-autopairs.completion.cmp").on_confirm_done())
+
 cmp.setup({
   snippet = {
     expand = function(args)

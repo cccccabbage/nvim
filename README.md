@@ -82,3 +82,28 @@ Configured in `lua/plugins/lsp.lua`. Uses `nvim-lspconfig` with `cmp-nvim-lsp` c
 | `<leader>e` | Open diagnostic float |
 
 Format on save is enabled by default and can be toggled with `<leader>tf`.
+
+## Completion (nvim-cmp)
+
+Configured in `lua/plugins/cmp.lua`. Uses `nvim-cmp` with `LuaSnip` for snippets and `nvim-autopairs` for bracket auto-closing.
+
+| Key | Action |
+|---|---|
+| `<C-Space>` | Trigger completion |
+| `<C-e>` | Abort completion |
+| `<CR>` | Confirm selection |
+| `<Tab>` / `<S-Tab>` | Navigate items or jump snippet placeholders |
+
+## Keymaps
+
+General keymaps defined in `lua/config/keymaps.lua`:
+
+| Keymap | Action |
+|---|---|
+| `<Esc>` | Clear search highlight |
+| `<leader>w` | Write file |
+| `<leader>q` | Quit window |
+| `<C-w>` | Close current buffer |
+| `<C-H>` / `<C-L>` | Previous / next buffer |
+| `<C-j>` / `<C-k>` | Move to lower / upper window |
+| `<leader>tf` | Toggle format on save |
