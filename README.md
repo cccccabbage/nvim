@@ -43,3 +43,10 @@ Configured in `lua/plugins/telescope.lua`. Treesitter-based preview is disabled 
 | `<C-p>` | Find files from git root |
 | `<leader>fp` | Find project (project.nvim integration) |
 | `g/` | Live grep from git root |
+
+## Project & Session Management
+
+Configured in `lua/plugins/project.lua`.
+
+- **project.nvim** detects project roots via LSP and common marker files (`.git`, `Makefile`, `Cargo.toml`, etc.) and silently changes the working directory.
+- **persisted.nvim** auto-saves and restores sessions per project directory. Sessions are loaded automatically when a project is opened via project.nvim.
