@@ -49,4 +49,12 @@ Configured in `lua/plugins/telescope.lua`. Treesitter-based preview is disabled 
 Configured in `lua/plugins/project.lua`.
 
 - **project.nvim** detects project roots via LSP and common marker files (`.git`, `Makefile`, `Cargo.toml`, etc.) and silently changes the working directory.
-- **persisted.nvim** auto-saves and restores sessions per project directory. Sessions are loaded automatically when a project is opened via project.nvim.
+- **persisted.nvim** auto-saves and restores sessions per project directory.
+
+## Git (gitsigns)
+
+Configured in `lua/plugins/gitsigns.lua`. Adds git decorations in the sign column.
+
+| Keymap | Action |
+|---|---|
+| `<leader>gb` | Blame current line (inline, non-full) | Sessions are loaded automatically when a project is opened via project.nvim.
