@@ -7,10 +7,17 @@ vim.pack.add({
 
   { src = "https://github.com/nvim-lua/plenary.nvim" },
   { src = "https://github.com/nvim-telescope/telescope.nvim" },
+  { src = "https://github.com/ahmedkhalf/project.nvim" },
+  { src = "https://github.com/olimorris/persisted.nvim" },
+
+  { src = "https://github.com/lewis6991/gitsigns.nvim" },
+  { src = "https://github.com/lewis6991/hover.nvim" },
 
   { src = "https://github.com/mg979/vim-visual-multi" },
 
   { src = "https://github.com/neovim/nvim-lspconfig" },
+
+  { src = "https://github.com/windwp/nvim-autopairs" },
 
   { src = "https://github.com/L3MON4D3/LuaSnip" },
   { src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
@@ -20,7 +27,10 @@ vim.pack.add({
 
 require("plugins.colorscheme")
 require("plugins.treesitter")
+require("plugins.project")
 require("plugins.telescope")
+require("plugins.gitsigns")
+require("plugins.hover")
 require("plugins.multicursor")
 require("plugins.cmp")
 require("plugins.lsp")
