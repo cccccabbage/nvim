@@ -11,3 +11,15 @@ keymap("n", "<C-L>", "<cmd>bnext<CR>", { desc = "Next buffer" })
 
 keymap("n", "<C-j>", "<C-w><C-j>", { desc = "Move to lower window" })
 keymap("n", "<C-k>", "<C-w><C-k>", { desc = "Move to upper window" })
+
+keymap("n", "<leader>fp", "<cmd>Telescope projects<CR>", { desc = "Find project" })
+
+keymap("n", "<leader>tf", function()
+  vim.g.format_on_save = vim.g.format_on_save == false and true or false
+  vim.notify("Format on save: " .. (vim.g.format_on_save == false and "OFF" or "ON"))
+end, { desc = "Toggle format on save" })
+
+keymap("n", "g/", function()
+  local root = vim.fs.root(0, { ".git" }) or vim.uv.cwd()
+  require("telescope.builtin").live_grep({ cwd = root })
+end, { desc = "Global search (regex)" })
