@@ -57,4 +57,8 @@ Configured in `lua/plugins/gitsigns.lua`. Adds git decorations in the sign colum
 
 | Keymap | Action |
 |---|---|
-| `<leader>gb` | Blame current line (inline, non-full) | Sessions are loaded automatically when a project is opened via project.nvim.
+| `<leader>gb` | Blame current line (inline, non-full) |
+
+## Hover
+
+Configured in `lua/plugins/hover.lua`. Replaces the default `K` handler with `hover.nvim`, which unifies LSP hover and diagnostic info into a single rounded-border float. Bound to `K` via the LSP `on_attach` (see LSP section). Sessions are loaded automatically when a project is opened via project.nvim.
