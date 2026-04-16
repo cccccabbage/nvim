@@ -61,4 +61,24 @@ Configured in `lua/plugins/gitsigns.lua`. Adds git decorations in the sign colum
 
 ## Hover
 
-Configured in `lua/plugins/hover.lua`. Replaces the default `K` handler with `hover.nvim`, which unifies LSP hover and diagnostic info into a single rounded-border float. Bound to `K` via the LSP `on_attach` (see LSP section). Sessions are loaded automatically when a project is opened via project.nvim.
+Configured in `lua/plugins/hover.lua`. Replaces the default `K` handler with `hover.nvim`, which unifies LSP hover and diagnostic info into a single rounded-border float. Bound to `K` via the LSP `on_attach` (see LSP section).
+
+## LSP
+
+Configured in `lua/plugins/lsp.lua`. Uses `nvim-lspconfig` with `cmp-nvim-lsp` capabilities.
+
+**Configured servers:** `clangd`, `rust_analyzer`, `pyright`, `lua_ls`
+
+| Keymap | Action |
+|---|---|
+| `gd` | Go to definition |
+| `gD` | Go to declaration |
+| `gr` | References (Telescope if available) |
+| `gi` | Go to implementation |
+| `K` | Hover (hover.nvim) |
+| `<leader>rn` | Rename symbol |
+| `<leader>ca` | Code action (normal & visual) |
+| `[d` / `]d` | Previous / next diagnostic |
+| `<leader>e` | Open diagnostic float |
+
+Format on save is enabled by default and can be toggled with `<leader>tf`.
