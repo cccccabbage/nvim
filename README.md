@@ -33,3 +33,13 @@ Uses Neovim 0.12+'s built-in `vim.pack` manager (`lua/config/plugins.lua`). No e
 | `nvim-lspconfig` | LSP client configuration |
 | `nvim-autopairs` | Auto-close brackets/quotes |
 | `nvim-cmp` + `LuaSnip` | Completion engine & snippets |
+
+## Fuzzy Finder (Telescope)
+
+Configured in `lua/plugins/telescope.lua`. Treesitter-based preview is disabled for performance.
+
+| Keymap | Action |
+|---|---|
+| `<C-p>` | Find files from git root |
+| `<leader>fp` | Find project (project.nvim integration) |
+| `g/` | Live grep from git root |
