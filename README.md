@@ -81,6 +81,7 @@ Configured in `lua/plugins/lsp.lua`. Uses `nvim-lspconfig` with `cmp-nvim-lsp` c
 | `K` | Hover (hover.nvim) |
 | `<leader>rn` | Rename symbol |
 | `<leader>ca` | Code action (normal & visual) |
+| `<leader>h` | Toggle document highlight |
 | `[d` / `]d` | Previous / next diagnostic |
 | `<leader>e` | Open diagnostic float |
 

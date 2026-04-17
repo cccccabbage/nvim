@@ -23,6 +23,16 @@ local on_attach = function(_, bufnr)
   map("n", "K", require("hover").hover, "LSP hover + diagnostics")
   map("n", "<leader>rn", vim.lsp.buf.rename, "LSP rename")
   map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, "LSP code action")
+  local hl_enabled = false
+  map("n", "<leader>h", function()
+    if hl_enabled then
+      vim.lsp.buf.clear_references()
+    else
+      vim.lsp.buf.document_highlight()
+    end
+    hl_enabled = not hl_enabled
+  end, "Toggle LSP highlight")
+
   map("n", "[d", vim.diagnostic.goto_prev, "Previous diagnostic")
   map("n", "]d", vim.diagnostic.goto_next, "Next diagnostic")
   map("n", "<leader>e", vim.diagnostic.open_float, "Line diagnostics")
