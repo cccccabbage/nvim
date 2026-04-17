@@ -31,6 +31,7 @@ Uses Neovim 0.12+'s built-in `vim.pack` manager (`lua/config/plugins.lua`). No e
 | `hover.nvim` | Unified hover (LSP + diagnostics) |
 | `vim-visual-multi` | Multiple cursors |
 | `todo-comments.nvim` | Highlight and search TODO/FIXME/HACK comments |
+| `which-key.nvim` | Popup keybinding hints on partial key sequences |
 | `nvim-lspconfig` | LSP client configuration |
 | `nvim-autopairs` | Auto-close brackets/quotes |
 | `nvim-cmp` + `LuaSnip` | Completion engine & snippets |
