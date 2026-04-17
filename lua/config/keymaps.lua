@@ -13,6 +13,7 @@ keymap("n", "<C-j>", "<C-w><C-j>", { desc = "Move to lower window" })
 keymap("n", "<C-k>", "<C-w><C-k>", { desc = "Move to upper window" })
 
 keymap("n", "<leader>fp", "<cmd>Telescope projects<CR>", { desc = "Find project" })
+keymap("n", "<leader>ft", "<cmd>TodoTelescope<CR>", { desc = "Find TODOs" })
 
 keymap("n", "<leader>tf", function()
   vim.g.format_on_save = vim.g.format_on_save == false and true or false

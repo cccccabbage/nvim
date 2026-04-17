@@ -19,6 +19,8 @@ vim.pack.add({
 
   { src = "https://github.com/windwp/nvim-autopairs" },
 
+  { src = "https://github.com/folke/todo-comments.nvim" },
+
   { src = "https://github.com/L3MON4D3/LuaSnip" },
   { src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
   { src = "https://github.com/saadparwaiz1/cmp_luasnip" },
@@ -32,5 +34,6 @@ require("plugins.telescope")
 require("plugins.gitsigns")
 require("plugins.hover")
 require("plugins.multicursor")
+require("plugins.todo-comments")
 require("plugins.cmp")
 require("plugins.lsp")

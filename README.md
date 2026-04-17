@@ -30,6 +30,7 @@ Uses Neovim 0.12+'s built-in `vim.pack` manager (`lua/config/plugins.lua`). No e
 | `gitsigns.nvim` | Git decorations & hunk actions |
 | `hover.nvim` | Unified hover (LSP + diagnostics) |
 | `vim-visual-multi` | Multiple cursors |
+| `todo-comments.nvim` | Highlight and search TODO/FIXME/HACK comments |
 | `nvim-lspconfig` | LSP client configuration |
 | `nvim-autopairs` | Auto-close brackets/quotes |
 | `nvim-cmp` + `LuaSnip` | Completion engine & snippets |
@@ -42,6 +43,7 @@ Configured in `lua/plugins/telescope.lua`. Treesitter-based preview is disabled 
 |---|---|
 | `<C-p>` | Find files from git root |
 | `<leader>fp` | Find project (project.nvim integration) |
+| `<leader>ft` | Find TODOs (todo-comments integration) |
 | `g/` | Live grep from git root |
 
 ## Project & Session Management
