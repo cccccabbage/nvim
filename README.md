@@ -35,6 +35,7 @@ Uses Neovim 0.12+'s built-in `vim.pack` manager (`lua/config/plugins.lua`). No e
 | `nvim-lspconfig` | LSP client configuration |
 | `nvim-autopairs` | Auto-close brackets/quotes |
 | `nvim-cmp` + `LuaSnip` | Completion engine & snippets |
+| `cmp-cmdline` + `cmp-buffer` | Command-line and search completion sources |
 
 ## Fuzzy Finder (Telescope)
 
@@ -91,12 +92,18 @@ Format on save is enabled by default and can be toggled with `<leader>tf`.
 
 Configured in `lua/plugins/cmp.lua`. Uses `nvim-cmp` with `LuaSnip` for snippets and `nvim-autopairs` for bracket auto-closing.
 
+**Insert mode:**
+
 | Key | Action |
 |---|---|
 | `<C-Space>` | Trigger completion |
 | `<C-e>` | Abort completion |
 | `<CR>` | Confirm selection |
 | `<Tab>` / `<S-Tab>` | Navigate items or jump snippet placeholders |
+
+**Command-line (`:`) and search (`/`, `?`):**
+
+Completion appears automatically as you type. `:` mode completes commands, paths, and options via `cmp-cmdline`. `/` and `?` modes complete buffer words via `cmp-buffer`.
 
 ## Keymaps
 

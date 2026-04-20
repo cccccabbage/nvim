@@ -38,3 +38,19 @@ cmp.setup({
     { name = "luasnip" },
   }),
 })
+
+-- `/` and `?` search completion from buffer words
+cmp.setup.cmdline({ "/", "?" }, {
+  mapping = cmp.mapping.preset.cmdline(),
+  sources = {
+    { name = "buffer" },
+  },
+})
+
+-- `:` command-line completion (commands, paths, options)
+cmp.setup.cmdline(":", {
+  mapping = cmp.mapping.preset.cmdline(),
+  sources = cmp.config.sources({
+    { name = "cmdline" },
+  }),
+})
