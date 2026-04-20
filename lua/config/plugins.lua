@@ -11,6 +11,7 @@ vim.pack.add({
   { src = "https://github.com/olimorris/persisted.nvim" },
 
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
+  { src = "https://github.com/kdheepak/lazygit.nvim" },
   { src = "https://github.com/lewis6991/hover.nvim" },
 
   { src = "https://github.com/mg979/vim-visual-multi" },
@@ -33,6 +34,7 @@ require("plugins.treesitter")
 require("plugins.project")
 require("plugins.telescope")
 require("plugins.gitsigns")
+require("plugins.lazygit")
 require("plugins.hover")
 require("plugins.multicursor")
 require("plugins.todo-comments")

@@ -20,6 +20,8 @@ keymap("n", "<leader>tf", function()
   vim.notify("Format on save: " .. (vim.g.format_on_save == false and "OFF" or "ON"))
 end, { desc = "Toggle format on save" })
 
+keymap("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
+
 keymap("n", "g/", function()
   local root = vim.fs.root(0, { ".git" }) or vim.uv.cwd()
   require("telescope.builtin").live_grep({ cwd = root })
