@@ -22,6 +22,9 @@ end, { desc = "Toggle format on save" })
 
 keymap("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
 
+keymap("n", "<leader>e", "<cmd>Yazi<CR>", { desc = "Yazi (cwd)" })
+keymap("n", "<leader>E", "<cmd>Yazi cwd<CR>", { desc = "Yazi (project root)" })
+
 keymap("n", "g/", function()
   local root = vim.fs.root(0, { ".git" }) or vim.uv.cwd()
   require("telescope.builtin").live_grep({ cwd = root })
