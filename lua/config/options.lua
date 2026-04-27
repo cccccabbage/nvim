@@ -28,3 +28,5 @@ opt.textwidth = 0
 opt.updatetime = 250
 opt.timeoutlen = 300
 opt.completeopt = "menu,menuone,noselect"
+
+opt.exrc = true

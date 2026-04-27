@@ -2,9 +2,6 @@ require("project_nvim").setup({
   detection_methods = { "lsp", "pattern" },
   patterns = { ".git", "Makefile", "package.json", "Cargo.toml", "pyproject.toml" },
   silent_chdir = true,
-  on_load_project = function()
-    require("persisted").load()
-  end,
 })
 
 require("persisted").setup({
