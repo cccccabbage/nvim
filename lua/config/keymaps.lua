@@ -19,6 +19,11 @@ keymap("n", "<C-L>", "<cmd>bnext<CR>", { desc = "Next buffer" })
 keymap("n", "<C-j>", "<C-w><C-j>", { desc = "Move to lower window" })
 keymap("n", "<C-k>", "<C-w><C-k>", { desc = "Move to upper window" })
 
+keymap("n", "<A-h>", "<C-w><C-h>", { desc = "Move to left window" })
+keymap("n", "<A-j>", "<C-w><C-j>", { desc = "Move to lower window" })
+keymap("n", "<A-k>", "<C-w><C-k>", { desc = "Move to upper window" })
+keymap("n", "<A-l>", "<C-w><C-l>", { desc = "Move to right window" })
+
 keymap("n", "<leader>wh", "<cmd>leftabove vsplit<CR>", { desc = "Split window left" })
 keymap("n", "<leader>wj", "<cmd>rightbelow split<CR>", { desc = "Split window down" })
 keymap("n", "<leader>wk", "<cmd>leftabove split<CR>", { desc = "Split window up" })

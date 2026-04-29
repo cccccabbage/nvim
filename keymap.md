@@ -24,6 +24,10 @@ Leader key: `<Space>`
 |----------|-------------|
 | `<C-j>` | Move to lower window |
 | `<C-k>` | Move to upper window |
+| `<A-h>` | Move to left window |
+| `<A-j>` | Move to lower window |
+| `<A-k>` | Move to upper window |
+| `<A-l>` | Move to right window |
 | `<leader>wh` | Split window left |
 | `<leader>wj` | Split window down |
 | `<leader>wk` | Split window up |
