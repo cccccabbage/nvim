@@ -7,6 +7,13 @@ vim.filetype.add({
   },
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+  group = augroup,
+  callback = function()
+    vim.opt_local.formatoptions:remove({ "r", "o" })
+  end,
+})
+
 vim.api.nvim_create_autocmd("TextYankPost", {
   group = augroup,
   callback = function()

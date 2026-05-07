@@ -35,7 +35,6 @@ local on_attach = function(_, bufnr)
 
   map("n", "[d", vim.diagnostic.goto_prev, "Previous diagnostic")
   map("n", "]d", vim.diagnostic.goto_next, "Next diagnostic")
-  map("n", "<leader>e", vim.diagnostic.open_float, "Line diagnostics")
 
   vim.api.nvim_create_autocmd("BufWritePre", {
     buffer = bufnr,
