@@ -18,6 +18,7 @@ opt.smartcase = true
 
 opt.splitright = true
 opt.splitbelow = true
+opt.laststatus = 3
 
 opt.scrolloff = 8
 opt.sidescrolloff = 8

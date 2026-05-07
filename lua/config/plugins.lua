@@ -24,6 +24,7 @@ vim.pack.add({
   { src = "https://github.com/folke/which-key.nvim" },
 
   { src = "https://github.com/mikavilpas/yazi.nvim" },
+  { src = "https://github.com/nvim-lualine/lualine.nvim" },
 
   { src = "https://github.com/L3MON4D3/LuaSnip" },
   { src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
@@ -46,3 +47,4 @@ require("plugins.which-key")
 require("plugins.cmp")
 require("plugins.lsp")
 require("plugins.yazi")
+require("plugins.lualine")
