@@ -31,6 +31,7 @@ keymap("n", "<leader>wl", "<cmd>rightbelow vsplit<CR>", { desc = "Split window r
 
 keymap("n", "<leader>fp", "<cmd>Telescope projects<CR>", { desc = "Find project" })
 keymap("n", "<leader>ft", "<cmd>TodoTelescope<CR>", { desc = "Find TODOs" })
+keymap("n", "<leader>fS", "<cmd>Telescope lsp_workspace_symbols<CR>", { desc = "Find symbols" })
 
 keymap("n", "<leader>tf", function()
   vim.g.format_on_save = vim.g.format_on_save == false and true or false
