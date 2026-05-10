@@ -12,9 +12,9 @@ local on_attach = function(_, bufnr)
   map("n", "gd", vim.lsp.buf.definition, "LSP definition")
   map("n", "gD", vim.lsp.buf.declaration, "LSP declaration")
   map("n", "gr", function()
-    local ok, builtin = pcall(require, "telescope.builtin")
+    local ok, _ = pcall(require, "snacks")
     if ok then
-      builtin.lsp_references()
+      Snacks.picker.lsp_references()
       return
     end
     vim.lsp.buf.references()

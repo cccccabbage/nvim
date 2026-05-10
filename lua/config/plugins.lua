@@ -5,9 +5,7 @@ vim.pack.add({
 
   { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 
-  { src = "https://github.com/nvim-lua/plenary.nvim" },
-  { src = "https://github.com/nvim-telescope/telescope.nvim" },
-  { src = "https://github.com/ahmedkhalf/project.nvim" },
+  { src = "https://github.com/folke/snacks.nvim" },
   { src = "https://github.com/olimorris/persisted.nvim" },
 
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
@@ -36,8 +34,8 @@ vim.pack.add({
 
 require("plugins.colorscheme")
 require("plugins.treesitter")
-require("plugins.project")
-require("plugins.telescope")
+require("plugins.persisted")
+require("plugins.snacks")
 require("plugins.gitsigns")
 require("plugins.lazygit")
 require("plugins.hover")

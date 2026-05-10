@@ -7,6 +7,20 @@ vim.filetype.add({
   },
 })
 
+vim.api.nvim_create_autocmd("BufEnter", {
+  group = augroup,
+  callback = function()
+    if vim.bo.buftype ~= "" then return end
+    local buf_name = vim.api.nvim_buf_get_name(0)
+    if buf_name == "" then return end
+
+    local root = vim.fs.root(0, { ".git", "Makefile", "package.json", "Cargo.toml", "pyproject.toml" })
+    if root and vim.fs.normalize(root) ~= vim.fs.normalize(vim.fn.getcwd()) then
+      vim.api.nvim_set_current_dir(root)
+    end
+  end,
+})
+
 vim.api.nvim_create_autocmd("FileType", {
   group = augroup,
   callback = function()

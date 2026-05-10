@@ -29,9 +29,15 @@ keymap("n", "<leader>wj", "<cmd>rightbelow split<CR>", { desc = "Split window do
 keymap("n", "<leader>wk", "<cmd>leftabove split<CR>", { desc = "Split window up" })
 keymap("n", "<leader>wl", "<cmd>rightbelow vsplit<CR>", { desc = "Split window right" })
 
-keymap("n", "<leader>fp", "<cmd>Telescope projects<CR>", { desc = "Find project" })
-keymap("n", "<leader>ft", "<cmd>TodoTelescope<CR>", { desc = "Find TODOs" })
-keymap("n", "<leader>fS", "<cmd>Telescope lsp_workspace_symbols<CR>", { desc = "Find symbols" })
+keymap("n", "<leader>fp", function()
+  Snacks.picker.projects()
+end, { desc = "Find project" })
+keymap("n", "<leader>ft", function()
+  Snacks.picker.todo_comments()
+end, { desc = "Find TODOs" })
+keymap("n", "<leader>fS", function()
+  Snacks.picker.lsp_workspace_symbols()
+end, { desc = "Find symbols" })
 
 keymap("n", "<leader>tf", function()
   vim.g.format_on_save = vim.g.format_on_save == false and true or false
@@ -43,7 +49,12 @@ keymap("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
 keymap("n", "<leader>e", "<cmd>Yazi<CR>", { desc = "Yazi (cwd)" })
 keymap("n", "<leader>E", "<cmd>Yazi cwd<CR>", { desc = "Yazi (project root)" })
 
+keymap("n", "<C-p>", function()
+  local root = vim.fs.root(0, { ".git" }) or vim.uv.cwd()
+  Snacks.picker.files({ cwd = root })
+end, { desc = "Find files from project root" })
+
 keymap("n", "g/", function()
   local root = vim.fs.root(0, { ".git" }) or vim.uv.cwd()
-  require("telescope.builtin").live_grep({ cwd = root })
+  Snacks.picker.grep({ cwd = root })
 end, { desc = "Global search (regex)" })

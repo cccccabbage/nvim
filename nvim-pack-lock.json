@@ -68,17 +68,9 @@
       "rev": "1a8e9dcf277d61105619498b2002c287c50424b8",
       "src": "https://github.com/olimorris/persisted.nvim"
     },
-    "plenary.nvim": {
-      "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
-      "src": "https://github.com/nvim-lua/plenary.nvim"
-    },
-    "project.nvim": {
-      "rev": "8c6bad7d22eef1b71144b401c9f74ed01526a4fb",
-      "src": "https://github.com/ahmedkhalf/project.nvim"
-    },
-    "telescope.nvim": {
-      "rev": "471eebb1037899fd942cc0f52c012f8773505da1",
-      "src": "https://github.com/nvim-telescope/telescope.nvim"
+    "snacks.nvim": {
+      "rev": "ad9ede6a9cddf16cedbd31b8932d6dcdee9b716e",
+      "src": "https://github.com/folke/snacks.nvim"
     },
     "todo-comments.nvim": {
       "rev": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668",

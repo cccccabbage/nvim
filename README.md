@@ -25,8 +25,8 @@ Uses Neovim 0.12+'s built-in `vim.pack` manager (`lua/config/plugins.lua`). No e
 |---|---|
 | `onedarkpro.nvim` | Colorscheme |
 | `nvim-treesitter` | Syntax highlighting & parsing |
-| `telescope.nvim` + `plenary.nvim` | Fuzzy finder |
-| `project.nvim` + `persisted.nvim` | Project detection & session management |
+| `snacks.nvim` | Pickers, notifications, indent guides, and more |
+| `persisted.nvim` | Session management |
 | `gitsigns.nvim` | Git decorations & hunk actions |
 | `hover.nvim` | Unified hover (LSP + diagnostics) |
 | `vim-visual-multi` | Multiple cursors |
@@ -37,22 +37,22 @@ Uses Neovim 0.12+'s built-in `vim.pack` manager (`lua/config/plugins.lua`). No e
 | `nvim-cmp` + `LuaSnip` | Completion engine & snippets |
 | `cmp-cmdline` + `cmp-buffer` | Command-line and search completion sources |
 
-## Fuzzy Finder (Telescope)
+## Pickers (Snacks)
 
-Configured in `lua/plugins/telescope.lua`. Treesitter-based preview is disabled for performance.
+Configured in `lua/plugins/snacks.lua`.
 
 | Keymap | Action |
 |---|---|
 | `<C-p>` | Find files from git root |
-| `<leader>fp` | Find project (project.nvim integration) |
+| `<leader>fp` | Find project |
 | `<leader>ft` | Find TODOs (todo-comments integration) |
+| `<leader>fS` | Find LSP workspace symbols |
 | `g/` | Live grep from git root |
 
-## Project & Session Management
+## Session Management
 
-Configured in `lua/plugins/project.lua`.
+Configured in `lua/plugins/persisted.lua`.
 
-- **project.nvim** detects project roots via LSP and common marker files (`.git`, `Makefile`, `Cargo.toml`, etc.) and silently changes the working directory.
 - **persisted.nvim** auto-saves and restores sessions per project directory.
 
 ## Git (gitsigns)
@@ -77,7 +77,7 @@ Configured in `lua/plugins/lsp.lua`. Uses `nvim-lspconfig` with `cmp-nvim-lsp` c
 |---|---|
 | `gd` | Go to definition |
 | `gD` | Go to declaration |
-| `gr` | References (Telescope if available) |
+| `gr` | References (Snacks if available) |
 | `gi` | Go to implementation |
 | `K` | Hover (hover.nvim) |
 | `<leader>rn` | Rename symbol |

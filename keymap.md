@@ -33,12 +33,14 @@ Leader key: `<Space>`
 | `<leader>wk` | Split window up |
 | `<leader>wl` | Split window right |
 
-## Telescope / Search
+## Search / Pickers (Snacks)
 
 | Shortcut | Description |
 |----------|-------------|
+| `<C-p>` | Find files from project root |
 | `<leader>fp` | Find project |
 | `<leader>ft` | Find TODOs |
+| `<leader>fS` | Find LSP workspace symbols |
 | `g/` | Global search (regex, from git root) |
 
 ## Tools
