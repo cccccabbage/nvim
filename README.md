@@ -21,10 +21,13 @@ Uses Neovim 0.12+'s built-in `vim.pack` manager (`lua/config/plugins.lua`). No e
 
 **Plugins included:**
 
+> **NOTE**: Once `vim.pack` supports dependency resolution, audit plugins and remove those only present as transitive dependencies.
+
 | Plugin | Purpose |
 |---|---|
 | `onedarkpro.nvim` | Colorscheme |
 | `nvim-treesitter` | Syntax highlighting & parsing |
+| `plenary.nvim` | Library (yazi dependency) |
 | `snacks.nvim` | Pickers, notifications, indent guides, and more |
 | `persisted.nvim` | Session management |
 | `gitsigns.nvim` | Git decorations & hunk actions |

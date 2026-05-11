@@ -5,6 +5,7 @@ vim.pack.add({
 
   { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 
+  { src = "https://github.com/nvim-lua/plenary.nvim" },
   { src = "https://github.com/folke/snacks.nvim" },
   { src = "https://github.com/olimorris/persisted.nvim" },
 
