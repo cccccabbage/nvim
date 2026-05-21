@@ -6,7 +6,7 @@ opt.mouse = "a"
 opt.clipboard = "unnamedplus"
 opt.termguicolors = true
 
-opt.colorcolumn="100"
+opt.colorcolumn="120"
 
 opt.expandtab = true
 opt.shiftwidth = 4
