@@ -31,3 +31,8 @@ opt.timeoutlen = 300
 opt.completeopt = "menu,menuone,noselect"
 
 opt.exrc = true
+
+opt.foldenable = true
+opt.foldlevel = 99
+opt.foldlevelstart = 99
+opt.foldcolumn = "0"
