@@ -28,17 +28,6 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
-vim.api.nvim_create_autocmd("BufWritePost", {
-  group = augroup,
-  callback = function()
-    if vim.bo.buftype == "" and vim.fn.expand("%") ~= "" then
-      vim.schedule(function()
-        require("ufo").openAllFolds()
-      end)
-    end
-  end,
-})
-
 vim.api.nvim_create_autocmd("TextYankPost", {
   group = augroup,
   callback = function()

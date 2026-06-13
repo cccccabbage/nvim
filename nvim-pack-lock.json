@@ -60,10 +60,6 @@
       "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
-    "nvim-ufo": {
-      "rev": "ab3eb124062422d276fae49e0dd63b3ad1062cfc",
-      "src": "https://github.com/kevinhwang91/nvim-ufo"
-    },
     "onedarkpro.nvim": {
       "rev": "f5fddfd5122fe00421e199151ae4fe8571a02898",
       "src": "https://github.com/olimorris/onedarkpro.nvim"
@@ -79,10 +75,6 @@
     "project.nvim": {
       "rev": "8c6bad7d22eef1b71144b401c9f74ed01526a4fb",
       "src": "https://github.com/ahmedkhalf/project.nvim"
-    },
-    "promise-async": {
-      "rev": "119e8961014c9bfaf1487bf3c2a393d254f337e2",
-      "src": "https://github.com/kevinhwang91/promise-async"
     },
     "snacks.nvim": {
       "rev": "ad9ede6a9cddf16cedbd31b8932d6dcdee9b716e",
