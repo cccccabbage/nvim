@@ -46,6 +46,14 @@ end, { desc = "Toggle format on save" })
 
 keymap("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
 
+local function toggle_floating_terminal()
+  Snacks.terminal()
+end
+
+keymap({ "n", "t" }, "<C-`>", toggle_floating_terminal, { desc = "Toggle floating terminal" })
+keymap({ "n", "t" }, "<Nul>", toggle_floating_terminal, { desc = "Toggle floating terminal" })
+keymap({ "n", "t" }, "<C-Space>", toggle_floating_terminal, { desc = "Toggle floating terminal" })
+
 keymap("n", "<leader>e", "<cmd>Yazi<CR>", { desc = "Yazi (cwd)" })
 keymap("n", "<leader>E", "<cmd>Yazi cwd<CR>", { desc = "Yazi (project root)" })
 

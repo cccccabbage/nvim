@@ -49,5 +49,6 @@ Leader key: `<Space>`
 |----------|-------------|
 | `<leader>tf` | Toggle format on save |
 | `<leader>gg` | LazyGit |
+| ``<C-`>`` | Toggle floating terminal |
 | `<leader>e` | Yazi (cwd) |
 | `<leader>E` | Yazi (project root) |

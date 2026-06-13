@@ -121,3 +121,4 @@ General keymaps defined in `lua/config/keymaps.lua`:
 | `<C-H>` / `<C-L>` | Previous / next buffer |
 | `<C-j>` / `<C-k>` | Move to lower / upper window |
 | `<leader>tf` | Toggle format on save |
+| ``<C-`>`` | Toggle floating terminal |
