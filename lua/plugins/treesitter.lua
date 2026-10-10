@@ -5,6 +5,7 @@ require("nvim-treesitter").setup({
     "rust",
     "python",
     "lua",
+    "slang",
     "vim",
     "vimdoc",
     "query",
